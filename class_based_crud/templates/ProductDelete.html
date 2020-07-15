@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-{% block title %}{% endblock %}
+{% block title %}Delete {{product.title}}{% endblock %}
 {% block content %}
-<h3>Are you sure you want to delete Employee {{employee.fullname}}</h3><br>
-<form action="{% url 'delete' employee.id %}" method="POST">{% csrf_token %}
+<h3>Are you sure you want to delete Employee {{product.title}}</h3><br>
+<form action="{% url 'delete' product.id %}" method="POST">{% csrf_token %}
     <div class="row">
         <div class="col-md 4">
             <button type="submit" class="btn btn-danger btn-block">Delete</button>

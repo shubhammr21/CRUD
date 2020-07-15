@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from employee_crud.forms import *
-from employee_crud.models import *
+from employee_crud.forms import EmployeeForm
+from employee_crud.models import Employee
 # Create your views here.
 
 def employee_form_view(request, id=0):

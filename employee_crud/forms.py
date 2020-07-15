@@ -1,5 +1,5 @@
 from django import forms
-from employee_crud.models import *
+from employee_crud.models import Employee
 
 class EmployeeForm(forms.ModelForm):
 
