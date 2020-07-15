@@ -12,7 +12,7 @@ def employee_form_view(request, id=0):
             form = EmployeeForm(request.POST, instance=employee)
         if form.is_valid():
             form.save()
-        return redirect('view')
+        return redirect('employee-view')
     else:
         if id == 0:
             form = EmployeeForm()
@@ -30,7 +30,7 @@ def employee_delete_view(request, id):
     employee = Employee.objects.get(pk=id)
     if request.method == 'POST':
         employee.delete()
-        return redirect('view')
+        return redirect('employee-view')
     context = {'employee' : employee}
     return render(request, 'employee_delete.html', context)
     
