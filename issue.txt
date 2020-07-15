@@ -1,7 +1,0 @@
-Performing system checks...
-
-System check identified no issues (0 silenced).
-July 15, 2020 - 16:50:28
-Django version 3.0.8, using settings 'crud_operation.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
